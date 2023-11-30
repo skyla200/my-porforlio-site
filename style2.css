@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ body{
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+   
+    
+    }
+
+
+header{
+        width: 100%;
+        height: 100px;
+        padding: 10px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    nav a:hover{
+        color: gold;
+    }
+
+
+    main{
+        width: 100%;
+        height: calc(100vh - 140px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .social{
+position: absolute;
+left: 40px;
+top: 60%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 20px;
+
+    }
+    .social img{
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .social img:hover{
+        transform: scale(1.5);
+    }
+    .profile-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    .profile-box img{
+        width: 150px;
+        height: 150px;
+        border-radius: 80px;
+        border: 2px solid white;
+        animation: rotating;
+        
+    }
+    .profile-box h1{
+        color: white;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    .profile-box p{
+        color: rgb(241, 241, 159);
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .chatbtn{
+        position: absolute;
+        right: 40px;
+        top: 80%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 8px 10px;
+        transition: 0.5 ease-in-out;
+    }
+
+    .chatbtn:hover{
+        color: black;
+        background-color: white;
+    }
+    footer{
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    footer p{
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-family: monospace;
+        font-size: 11px;
+    }
+
+
+    @keyframes rotating{
+        from{
+            transform: scale(1)rotate(0deg);
+            filter: grayscale(0.5);
+        }
+        to{
+transform: scale(1.5)rotate(360deg);
+filter: grayscale(1);
+
+        }
+    }
+    /* tablet styling starts here */
+    @media(max-width:750){
+    body{     
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    
+    header{
+        width: 100%;
+        height: 100px;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        
+    }
+    
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+     
+    main{
+        width: 100%;
+        height: calc(100vh - 140px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        padding-top: 80px 0 30px 0;
+    }
+    
+    .social{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+        }
+    }
+        
+
+    
+
+    
+ /* mobile view */
+ @media(max-width:450px){
+
+
+body{     
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+nav a{
+   
+    font-size: 13px;
+    
+}
+
+
+
+
+main{
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+.social{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: 60%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+    }
+    .profile-box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+     
+        
+        }
+        .profile-box img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: whitesmoke;
+            animation: rotating;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            
+        }
+        .profile-box h1{
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        .profile-box p{
+            color: rgb(241, 241, 159);
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: -10px;
+        }
+
+     
+        .chatbtn{
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 5px 20px;
+            transition: 0.5 ease-in-out;
+        }
+
+
+    }
+    
+        /* samsung galaxy fold */
+        @media(max-width:300px){
+            nav a{
+                font-size: 10px;
+            }
+     
+        .profile-box h1{
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+     }
+        
